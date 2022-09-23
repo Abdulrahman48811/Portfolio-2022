@@ -18,7 +18,7 @@ export default function Hero({}: Props) {
         <div className='h-screen flex flex-col space-y-8 items-center justify-center 
         text-center overflow-hidden'>
             <BackgroundCircles />
-            <img src="https://photos.app.goo.gl/FHNVp5q8u5oWUhQT8" alt=""/>
+            <img src="https://cdn.sanity.io/images/vleyd5bv/production/d55159e7a05a8683ee3f1a7121edb30655b4266e-243x320.png" alt=""/>
         <h1>
         <span>{text}</span>
         <Cursor cursorColor='#EEBC1D' />
