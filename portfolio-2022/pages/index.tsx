@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Header from '../components/Header'
 import styles from '../styles/Home.module.css'
 import Hero from '../components/Hero'
+import About from '../components/About'
 const Home: NextPage = () => {
   return (
     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandotory 
@@ -15,11 +16,14 @@ const Home: NextPage = () => {
       <Header />
       
       {/* {hero} */}  
-      <section id='hero' className='snap-center'>
+      <section id='hero' className='snap-start'>
         <Hero />
       </section>
       {/* {about} */}  
-      
+      <section id="about" className='snap-center'>
+        <About />
+      </section>
+
       {/* {experience} */}  
       
       {/* {skills} */}  
