@@ -28,7 +28,7 @@ export default function About({ }: Props) {
                 viewport={{
                     once: true
                 }}
-                src="https://cdn.sanity.io/images/vleyd5bv/production/d55159e7a05a8683ee3f1a7121edb30655b4266e-243x320.png"
+                src="https://cdn.sanity.io/images/vleyd5bv/production/aff65217bab1884ba8fb73ca81e13030cd5b37c7-240x320.png"
                 className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover
         md:rounded-lg md:w-64 md:h-96 xl:w-[400px] xl:h-[500px]'
             />
