@@ -7,6 +7,7 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import WorkExperience from '../components/WorkExperience'
 import Skills from '../components/Skills'
+import Projects from '../components/Projects'
 const Home: NextPage = () => {
   return (
     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandotory 
@@ -29,13 +30,15 @@ const Home: NextPage = () => {
       <section id="experience" className='snap-center'>
         <WorkExperience />
       </section>
-      {/* {skills} */}  
+     
       <section id="skills" className='snap-start'>
       <Skills />
       </section>
       
       {/* {projects} */}  
-      
+      <section id="projects" className='snap-start'>
+        <Projects />
+      </section>
       {/* {contact me} */}  
       
     </div>
