@@ -18,14 +18,35 @@ function ContactMe({}: Props) {
             </span>
         </h4>
 
-        <div>
+        <div className='space-y-10'>
         
         <div className='flex items-center space-x-5 justify-center'>
         <PhoneIcon className='text-[#f7ab0a] h-7 w-7 animate-pulse'/>
         <p className='text-2xl'>+1(619)-855-2160</p>
         </div>
 
+
+        <div className='flex items-center space-x-5 justify-center'>
+        <EnvelopeIcon className='text-[#f7ab0a] h-7 w-7 animate-pulse'/>
+        <p className='text-2xl'>abdulrahman48811@gmail.com</p>
         </div>
+
+        <div className='flex items-center space-x-5 justify-center'>
+        <MapPinIcon className='text-[#f7ab0a] h-7 w-7 animate-pulse'/>
+        <p className='text-2xl'>San Diego, California</p>
+        </div>
+
+        </div>
+        <form>
+    <div>
+      <input type="text" /><input type="text" /> 
+    </div>
+
+    <input type="text" />
+    <textarea />
+    <button>Submit</button>
+        </form>
+
     </div>
     </div>
   )
