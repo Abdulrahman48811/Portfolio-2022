@@ -22,22 +22,22 @@ export default function ExperienceCard({ }: Props) {
                 <h4 className='text-4xl font-light'> Full-Stack Web Developer </h4>
                 <p className='font-bold text-2xl mt-1'>STEERus</p>
                 <div className='flex space-x-2 my-2'>
-                <img 
-                className='h-10 w-10 rounded-full'
-                src="https://cdn.sanity.io/images/vleyd5bv/production/7469cd11b7a5ae77c1b217afe47317507174937e-1399x1373.jpg" alt=""
-                />
-                <img 
-                className='h-10 w-10 rounded-full'
-                src="https://cdn.sanity.io/images/vleyd5bv/production/7469cd11b7a5ae77c1b217afe47317507174937e-1399x1373.jpg" alt=""
-                />
-                <img 
-                className='h-10 w-10 rounded-full'
-                src="https://cdn.sanity.io/images/vleyd5bv/production/7469cd11b7a5ae77c1b217afe47317507174937e-1399x1373.jpg" alt=""
-                />
-                <img 
-                className='h-10 w-10 rounded-full'
-                src="https://cdn.sanity.io/images/vleyd5bv/production/7469cd11b7a5ae77c1b217afe47317507174937e-1399x1373.jpg" alt=""
-                />
+                    <img
+                        className='h-10 w-10 rounded-full'
+                        src="https://cdn.sanity.io/images/vleyd5bv/production/7469cd11b7a5ae77c1b217afe47317507174937e-1399x1373.jpg" alt=""
+                    />
+                    <img
+                        className='h-10 w-10 rounded-full'
+                        src="https://cdn.sanity.io/images/vleyd5bv/production/7469cd11b7a5ae77c1b217afe47317507174937e-1399x1373.jpg" alt=""
+                    />
+                    <img
+                        className='h-10 w-10 rounded-full'
+                        src="https://cdn.sanity.io/images/vleyd5bv/production/7469cd11b7a5ae77c1b217afe47317507174937e-1399x1373.jpg" alt=""
+                    />
+                    <img
+                        className='h-10 w-10 rounded-full'
+                        src="https://cdn.sanity.io/images/vleyd5bv/production/7469cd11b7a5ae77c1b217afe47317507174937e-1399x1373.jpg" alt=""
+                    />
 
 
                 </div>
