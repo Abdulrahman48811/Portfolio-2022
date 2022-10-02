@@ -45,7 +45,7 @@ const Home: NextPage = () => {
       </section>
 
       <Link href="#hero">
-      <footer className='sticky bottom-5 w-full cursor-pointer '>
+      <footer className='sticky bottom-9 w-full cursor-pointer '>
         <div className='flex items-center justify-center '>
           <img className='h-10 w-10 rounded-full object-cover filter grayscale hover:grayscale-0 cursor-pointer'
           src="https://cdn.sanity.io/images/vleyd5bv/production/d55159e7a05a8683ee3f1a7121edb30655b4266e-243x320.png"/>
