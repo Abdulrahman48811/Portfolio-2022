@@ -45,11 +45,6 @@ export default {
     {
       name: "points",
       title: "Points",
-      type: "string",
-    },
-    {
-      name: "socials",
-      title: "Socials",
       type: "array",
       of: [{ type: "string" }],
     },
