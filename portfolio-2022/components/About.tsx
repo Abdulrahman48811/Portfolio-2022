@@ -1,10 +1,14 @@
 import React from 'react'
 import { motion } from "framer-motion"
 import { SocialIcon } from 'react-social-icons'
+import { PageInfo } from '../typings'
+import { urlFor } from '../sanity'
 
-type Props = {}
+type Props = {
+    pageInfo: PageInfo;
+}
 
-export default function About({ }: Props) {
+export default function About({ pageInfo }: Props) {
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -28,19 +32,14 @@ export default function About({ }: Props) {
                 viewport={{
                     once: true
                 }}
-                src="https://cdn.sanity.io/images/vleyd5bv/production/aff65217bab1884ba8fb73ca81e13030cd5b37c7-240x320.png"
+                src={urlFor(pageInfo?.profilePic).url()}
                 className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover
         md:rounded-lg md:w-64 md:h-96 xl:w-[400px] xl:h-[500px]'
             />
 
             <div className='space-y-10 px-0 md:px-10'>
                 <h4 className='text-3xl foont-semibold'>Here is a <span className='underline decoration-[#F7AB0A]'>little</span> background</h4>
-                <p text-sm>I'm Abdulrahman. Over the past couple of years I have been interested in tech
-                    and was learning through free resources online such as Youtube, FreeCodeCamp, CodeCademy, etc... In the year 2021 I decided to attend a coding bootcamp;
-                    The Lighthouse Labs Web Development Bootcamp, based in CANADA. LHL is the main
-                    source of my education and after graduating I had the opportunity to work as a Freelancer for a couple of
-                    companies. I also completed some projects of my own, that I am really proud of. Projects that helped me learn a lot more new tech stacks, languages, and libraries.
-                    With this motivation, I believe that I am ready to take on what is to come and accomplish my goals in life.</p>
+                <p className="text-base" text-sm>{pageInfo?.backgroundInformation}</p>
             </div>
         </motion.div>
     )
