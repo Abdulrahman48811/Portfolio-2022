@@ -35,7 +35,7 @@ const Home = ({pageInfo, experiences, projects, socials, skills}: Props) => {
         <title>Abdulrahman's Portfolio</title>
       </Head>
 
-      <Header />
+      <Header socials={socials}/>
 
       <section id='hero' className='snap-start'>
         <Hero />
