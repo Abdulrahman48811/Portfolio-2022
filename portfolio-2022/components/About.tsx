@@ -39,7 +39,7 @@ export default function About({ pageInfo }: Props) {
 
             <div className='space-y-10 px-0 md:px-10'>
                 <h4 className='text-3xl foont-semibold'>Here is a <span className='underline decoration-[#F7AB0A]'>little</span> background</h4>
-                <p className="text-base" text-sm>{pageInfo?.backgroundInformation}</p>
+                <p className="text-base">{pageInfo?.backgroundInformation}</p>
             </div>
         </motion.div>
     )

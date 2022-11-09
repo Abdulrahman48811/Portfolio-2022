@@ -32,7 +32,7 @@ function ContactMe({ }: Props) {
 
             <div className='flex flex-col space-y-10'>
                 <h4 className='text-4xl font-semibold text-center'>
-                    I have got just what you need. {" "}
+                    I've got just what you need. {" "}
                     <span className='decoration-[#f7ab0a]/50 underline'>
                         Lets Talk.
                     </span>
@@ -42,18 +42,18 @@ function ContactMe({ }: Props) {
 
                     <div className='flex items-center space-x-5 justify-center'>
                         <PhoneIcon className='text-[#f7ab0a] h-7 w-7 animate-pulse' />
-                        <p className='text-2xl'>+1(619)-855-2160</p>
+                        <p className='text-2xl font-serif '>+1 (619)-855-2160</p>
                     </div>
 
 
                     <div className='flex items-center space-x-5 justify-center'>
                         <EnvelopeIcon className='text-[#f7ab0a] h-7 w-7 animate-pulse' />
-                        <p className='text-2xl'>abdulrahman48811@gmail.com</p>
+                        <p className='text-2xl font-serif'>Abdulrahman48811@gmail.com</p>
                     </div>
 
                     <div className='flex items-center space-x-5 justify-center'>
                         <MapPinIcon className='text-[#f7ab0a] h-7 w-7 animate-pulse' />
-                        <p className='text-2xl'>San Diego, California</p>
+                        <p className='text-2xl font-serif'>San Diego, California</p>
                     </div>
 
                 </div>
