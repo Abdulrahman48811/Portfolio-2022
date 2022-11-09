@@ -1,14 +1,18 @@
 import Link from 'next/link'
 import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
+import { urlFor } from '../sanity'
+import { PageInfo } from '../typings'
 import BackgroundCircles from './BackgroundCircles'
 
-type Props = {}
+type Props = {
+    pageInfo: PageInfo;
+}
 
-export default function Hero({ }: Props) {
+export default function Hero({ pageInfo }: Props) {
     const [text, count] = useTypewriter({
         words: [
-            "Hi, my name is Abdulrahman Mohammed",
+            `Hi, my name is ${pageInfo.name}`,
             "Guy-who-loves-basketball.tsx",
             "<ButLovesToCodeMore />",
         ],
@@ -21,9 +25,9 @@ export default function Hero({ }: Props) {
             <BackgroundCircles />
             <img
                 className='relative rounded-full h-32 w-32 mx-auto object-cover'
-                src="https://cdn.sanity.io/images/vleyd5bv/production/d55159e7a05a8683ee3f1a7121edb30655b4266e-243x320.png" alt="" />
+                src={urlFor(pageInfo?.heroImage).url()} alt="" />
             <div className='z-20'>
-                <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'> Full-Stack Web-Developer</h2>
+                <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'> {pageInfo?.role}</h2>
                 <h1 className='text-4xl lg:text-5xl font-semibold px-10'>
                     <span className='mr-3'>{text}</span>
                     <Cursor cursorColor='#EEBC1D' />
