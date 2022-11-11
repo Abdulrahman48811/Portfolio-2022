@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import { Project } from '../typings';
 import { urlFor } from '../sanity';
+import { SocialIcon } from 'react-social-icons';
 type Props = {
     projects: Project[];
 }
@@ -54,6 +55,13 @@ function Projects({ projects }: Props) {
                                 ))}
                             </div>
                             <p className='text-lg text-center md:text-left'>{project?.summary}</p>
+                                <SocialIcon
+                                    key={project._id}
+                                    url={project.linkToBuild}
+                                    fgColor='#f7ab0a'
+                                    bgColor='gray'
+                                    className=""
+                                />
                         </div>
                     </div>
                 ))}
