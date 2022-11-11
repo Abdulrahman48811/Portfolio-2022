@@ -10,6 +10,7 @@ import skill from './skill'
 import experience from './experience'
 import social from './social'
 import project from './project'
+import resume from './resume'
 
 export default createSchema({
   name: 'default',
@@ -19,6 +20,7 @@ export default createSchema({
     experience,
     social,
     project,
+    resume,
   ]),
 });
 

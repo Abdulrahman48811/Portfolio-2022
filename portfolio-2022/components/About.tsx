@@ -1,14 +1,15 @@
 import React from 'react'
 import { motion } from "framer-motion"
 import { SocialIcon } from 'react-social-icons'
-import { PageInfo } from '../typings'
+import { PageInfo, Resume } from '../typings'
 import { urlFor } from '../sanity'
 
 type Props = {
     pageInfo: PageInfo;
+    resume: Resume[];
 }
 
-export default function About({ pageInfo }: Props) {
+export default function About({ pageInfo, resume }: Props) {
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -40,6 +41,17 @@ export default function About({ pageInfo }: Props) {
             <div className='space-y-10 px-0 md:px-10'>
                 <h4 className='text-3xl foont-semibold'>Here is a <span className='underline decoration-[#F7AB0A]'>little</span> background</h4>
                 <p className="text-base">{pageInfo?.backgroundInformation}</p>
+               <h2 className='uppercase tracking-[20px] white-gray-500 text-m'>Link To Resume</h2>
+                {resume?.map((resume) => (
+                <SocialIcon
+                    key={resume._id}
+                    url={resume.url}
+                    fgColor='#f7ab0a'
+                    bgColor='gray'
+                    className=""
+                />
+                    ))}
+                    
             </div>
         </motion.div>
     )

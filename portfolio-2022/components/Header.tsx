@@ -33,24 +33,10 @@ export default function Header({ socials }: Props) {
                 <SocialIcon 
                     key={social._id}
                     url={social.url}
-                    // "https://twitter.com/abdul48811"
                     fgColor='gray'
                     bgColor='transparent'
                 />
                     ))}
-                {/* {social icons} */}
-                {/* <SocialIcon url="https://github.com/Abdulrahman48811"
-                    fgColor='gray'
-                    bgColor='transparent'
-                />
-                <SocialIcon url="https://instagram.com/abdulrahmancodes"
-                    fgColor='gray'
-                    bgColor='transparent'
-                />
-                <SocialIcon url="https://linkedin.com/in/abdulrahman-mohammed-b48456230/"
-                    fgColor='gray'
-                    bgColor='transparent'
-                /> */}
             </motion.div>
 
                 <Link href="#contact">
