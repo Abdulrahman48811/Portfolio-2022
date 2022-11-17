@@ -34,3 +34,4 @@ export default function Skills({ skills }: Props) {
     </motion.div>
   );
 }
+// 
